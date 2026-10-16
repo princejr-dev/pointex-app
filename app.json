@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "pointex-app",
+    "name": "Pointex",
     "slug": "pointex-app",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -23,6 +23,15 @@
       "package": "com.shamerocky.pointexapp"
     },
     "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#000000",
+          "image": "./assets/images/pointex-foreground.png",
+          "imageWidth": 180,
+          "resizeMode": "contain"
+        }
+      ],
       "expo-font",
       [
         "expo-navigation-bar",
@@ -31,7 +40,6 @@
           "style": "light"
         }
       ],
-      "expo-video",
       "expo-audio"
     ],
     "web": {
